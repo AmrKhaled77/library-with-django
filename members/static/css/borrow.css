@@ -1,0 +1,190 @@
+.btn-borrow {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+.btn-borrow:hover {
+  background-color: #45a049;
+}
+
+.btn-disabled {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #cccccc;
+  color: #666666;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: not-allowed;
+}
+
+.book-details {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-info {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+
+.book-info p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.borrow-terms {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #fff3e0;
+  border-radius: 6px;
+  border: 1px solid #ffe0b2;
+}
+
+.borrow-terms h3 {
+  color: #e65100;
+  margin-bottom: 10px;
+}
+
+.borrow-terms ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.borrow-terms li {
+  margin: 8px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.borrow-terms li:before {
+  content: "•";
+  color: #e65100;
+  position: absolute;
+  left: 0;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #45a049;
+}
+
+.btn-secondary {
+  background-color: #f44336;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1em;
+  transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #da190b;
+}
+
+.borrow-section {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.borrow-section .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.borrow-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.borrow-section input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.borrow-section input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.borrow-section .form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.borrow-section .btn-primary,
+.borrow-section .btn-secondary {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.borrow-section .btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.borrow-section .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.borrow-section .btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.borrow-section .btn-secondary:hover {
+  background-color: #5a6268;
+}

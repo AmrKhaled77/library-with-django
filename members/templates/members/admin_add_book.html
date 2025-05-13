@@ -1,0 +1,64 @@
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book - Online Library</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <script src="../javaScript/add-book.js"></script>
+</head>
+<body>
+    <nav>
+       <ul>
+    <li><a href="{% url 'admin_dashboard_view' %}"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="{% url 'admin_add_book_view' %}"><i class="fas fa-plus"></i> Add Book</a></li>
+    <li><a href="{% url 'admin_view_books_view' %}"><i class="fas fa-book"></i> View Books</a></li>
+    <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+</ul>
+    </nav>
+    <main>
+        <div class="card">
+            <h1>Add Book</h1>
+            <form id="addBookForm">
+                <label for="bookId"><i class="fas fa-id-badge"></i> Book ID:</label>
+                <input type="text" id="bookId" readonly>
+                
+                <label for="bookName"><i class="fas fa-book"></i> Book Name:</label>
+                <input type="text" id="bookName" required>
+                
+                <label for="author"><i class="fas fa-user"></i> Author:</label>
+                <input type="text" id="author" required>
+                
+                <label for="category"><i class="fas fa-list"></i> Category:</label>
+                <select id="category" required>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Non-Fiction">Non-Fiction</option>
+                    <option value="Science">Science</option>
+                </select>
+                
+                <label for="description"><i class="fas fa-file-alt"></i> Description:</label>
+                <textarea id="description" rows="4" required></textarea>
+                
+                <label for="dateAdded"><i class="fas fa-calendar"></i> Date Added:</label>
+                <input type="date" id="dateAdded" required>
+
+                <label for="availability"><i class="fas fa-file-alt"></i> Availability:</label>
+                <select id="availability" required>
+                    <option value="Available">Available</option>
+                    <option value="Borrowed">Borrowed</option>
+                </select>
+                
+                <button type="submit" id="saveBookBtn"><i class="fas fa-save" style="margin-right: 0.5rem;"></i> Save Book</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p> Web Project FCAI</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Books - Online Library</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav>
+         <ul>
+        <li><a href="{% url 'user_dashboard_view' %}"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="{% url 'user_search_books_view' %}"><i class="fas fa-search"></i> Search Books</a></li>
+        <li><a href="{% url 'user_view_books_view' %}"><i class="fas fa-book"></i> View Books</a></li>
+        <li><a href="{% url 'user_borrowed_books_view' %}"><i class="fas fa-book-reader"></i> Borrowed Books</a></li>
+        <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+    </ul>
+    </nav>
+    <main>
+        <div class="card">
+            <h1>Search Books</h1>
+            <form>
+                <label for="search-title"><i class="fas fa-book"></i> Search by Title:</label>
+                <input type="text" id="search-title" placeholder="Enter book title">
+                
+                <label for="search-author"><i class="fas fa-user"></i> Search by Author:</label>
+                <input type="text" id="search-author" placeholder="Enter author name">
+                
+                <label for="search-category"><i class="fas fa-list"></i> Search by Category:</label>
+                <select id="search-category">
+                    <option value="">All Categories</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Non-Fiction">Non-Fiction</option>
+                    <option value="Science">Science</option>
+                </select>
+                
+                <button type="submit"><i class="fas fa-search" style="margin-right: 0.5rem;"></i> Search</button>
+            </form>
+            <h2>Results</h2>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Availability</th>
+                </tr>
+ 
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p> Web Project FCAI</p>
+    </footer>
+    <script src = "../javaScript/userSearch.js"></script>
+</body>
+</html>

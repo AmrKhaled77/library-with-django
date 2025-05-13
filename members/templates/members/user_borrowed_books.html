@@ -1,0 +1,48 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrowed Books - Online Library</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    <nav>
+         <ul>
+        <li><a href="{% url 'user_dashboard_view' %}"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="{% url 'user_search_books_view' %}"><i class="fas fa-search"></i> Search Books</a></li>
+        <li><a href="{% url 'user_view_books_view' %}"><i class="fas fa-book"></i> View Books</a></li>
+        <li><a href="{% url 'user_borrowed_books_view' %}"><i class="fas fa-book-reader"></i> Borrowed Books</a></li>
+        <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+    </ul>
+    </nav>
+    <main>
+        <div class="card">
+            <h1>Your Borrowed Books</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Availability</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Books will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p> Web Project FCAI</p>
+    </footer>
+
+    <script src="../javaScript/userBorrowedBooks.js"></script>
+</body>
+</html>
